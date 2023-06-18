@@ -137,3 +137,4 @@ application/frontend/assets/bundles
 
 application/frontend/package-lock.json
 application/frontend/assets/webpack-stats.json
+poetry.lock
