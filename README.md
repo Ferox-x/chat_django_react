@@ -43,9 +43,25 @@ ___
 
     `python manage.py migrate`
 
-8) Загрузить фикстуры (перейти в директорию application):
+7) Загрузить фикстуры (перейти в директорию application):
 
     `python manage.py loaddata fixtures/*.json`
+
+    Фикстуры содержат двух пользователей со следующими данными:
+
+    
+    User 1
+
+    login: username1
+
+    password: user456852
+
+    
+    User 2
+
+    login: username2
+
+    password: user456852
 
 9) Запустить сервер (перейти в директорию application):
 
