@@ -1,0 +1,27 @@
+@import "./../../../stylesheet/liabrary.scss";
+
+.login {
+  @extend %flex_center;
+  @extend %full_screen;
+
+  &__input {
+    width: 95%;
+    height: 48px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  &__button {
+    width: 102px;
+    height: 38px;
+  }
+
+  &__form {
+    @extend %flex_vertical_center_column;
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,7 @@
+@import "./../../stylesheet/liabrary.scss";
+
+.logout_icon {
+  width: 25px;
+  height: 30px;
+  @include background_styles("../../images/logout.svg");
+}

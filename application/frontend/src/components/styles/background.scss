@@ -1,0 +1,6 @@
+@import "./../../stylesheet/liabrary.scss";
+
+.blur_background  {
+    @include background_styles("../../images/Blur.jpg");
+    background-size: cover;
+}

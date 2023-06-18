@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
+{% block css_render %}{% render_bundle 'logout' 'css' %}{% endblock %}
+{% block js_render %}{% render_bundle 'logout' 'js' %}{% endblock %}
+{% block title %}Выход{% endblock %}
+{% load static %}

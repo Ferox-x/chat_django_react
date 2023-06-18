@@ -1,0 +1,23 @@
+@import "./../../../stylesheet/liabrary.scss";
+
+.logout {
+  @extend %flex_center;
+  @extend %full_screen;
+  flex-direction: column;
+
+  &__message {
+    font-size: 56px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    font-weight: 800;
+  }
+
+  &__link {
+    @extend %flex_center;
+    width: 100px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: #5D5FEF;
+    border-radius: 10px;
+  }
+}

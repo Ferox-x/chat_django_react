@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
+{% block css_render %}{% render_bundle 'login' 'css' %}{% endblock %}
+{% block js_render %}{% render_bundle 'login' 'js' %}{% endblock %}
+{% block title %}Авторизация{% endblock %}
+{% load static %}

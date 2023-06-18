@@ -1,0 +1,9 @@
+@import "./../../stylesheet/liabrary.scss";
+
+.button {
+  @extend %flex_center;
+  @extend %full_content;
+  background-color: #5D5FEF;
+  border-radius: 5px;
+  color: #FFFFFF;
+}

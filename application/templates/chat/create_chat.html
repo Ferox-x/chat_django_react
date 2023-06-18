@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
+{% block css_render %}{% render_bundle 'create_chat' 'css' %}{% endblock %}
+{% block js_render %}{% render_bundle 'create_chat' 'js' %}{% endblock %}
+{% block title %}Чат{% endblock %}
+{% load static %}

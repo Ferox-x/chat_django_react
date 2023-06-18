@@ -1,0 +1,118 @@
+.message_date {
+  display: none;
+}
+
+.message {
+  display: flex;
+  width: 100%;
+
+  &_right {
+    justify-content: flex-end;
+  }
+
+  &_left {
+    justify-content: flex-start;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    max-width: 300px;
+    margin-bottom: 6px;
+
+    &_right {
+      color: #FFFFFF;
+    }
+
+    &_left {
+      color: #2C2C2E;
+    }
+  }
+
+  &__message {
+    display: flex;
+    max-width: 300px;
+    padding: 6px 6px 4px 8px;
+
+    &_right {
+      flex-direction: row;
+      background-color: #5D5FEF;
+      border-radius: 6px 0 6px 6px;
+    }
+
+    &_left {
+      flex-direction: column;
+      background-color: #F4F4F4;
+      border-radius: 0 6px 6px 6px;
+    }
+  }
+
+  &__corner {
+    width: 0;
+    height: 0;
+
+    &_right {
+      border-top: 10px solid #5D5FEF;
+      border-right: 10px solid transparent;
+    }
+
+    &_left {
+      border-top: 10px solid #F4F4F4;
+      border-left: 10px solid transparent;
+    }
+  }
+
+  &__additional_info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__username {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 5px;
+    word-break: break-word;
+  }
+
+  &__time {
+    display: flex;
+    align-items: flex-end;
+    font-size: 12px;
+    font-weight: 300;
+    margin-right: 5px;
+
+    &_left {
+      color: #666668;
+    }
+  }
+
+  &__check {
+    display: flex;
+    align-items: flex-end;
+    width: 20px;
+    height: 10px;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+  }
+
+  &__check_double_tick {
+    background-image: url("../../../../../images/double_tick.svg");
+  }
+
+  &__check_one_tick {
+    background-image: url("../../../../../images/one_tick.svg");
+  }
+}

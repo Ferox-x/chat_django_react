@@ -1,0 +1,69 @@
+[
+  {
+    "model": "chat.chatmodel",
+    "pk": "a45c441d-4fde-4f79-aa67-ecfbb6be1991",
+    "fields": {
+      "room_name": "������ �������"
+    }
+  },
+  {
+    "model": "chat.messagemodel",
+    "pk": "0516023e-22fc-4d96-9f2d-d8f1d848aef4",
+    "fields": {
+      "chat": "a45c441d-4fde-4f79-aa67-ecfbb6be1991",
+      "user": "0b9cc9c3-7f13-40f6-b575-ed5894aa85e5",
+      "created_at": "2023-06-18T11:15:36.197Z",
+      "message": "Donec lacinia ante tellus, in lacinia est elementum nec. Vestibulum dui mauris, rhoncus nec diam sed, pulvinar consectetur lectus. Nullam luctus suscipit nisl et placerat. Vestibulum ligula neque, condimentum in aliquam vel, rutrum non mauris. Nulla hendrerit tortor sed sem porta, eget mollis turpis consectetur. Vestibulum ac aliquam dolor. In pharetra varius vestibulum. Fusce sollicitudin augue lacus, ac molestie nibh porta in."
+    }
+  },
+  {
+    "model": "chat.messagemodel",
+    "pk": "8773f70e-5a19-45e0-8d0c-a3dca6756a45",
+    "fields": {
+      "chat": "a45c441d-4fde-4f79-aa67-ecfbb6be1991",
+      "user": "01601353-3562-4d0d-aa6d-f35ec1366af6",
+      "created_at": "2023-06-18T11:15:05.184Z",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur sapien felis, et pharetra tellus sodales id. Pellentesque vehicula, mi a pretium ultricies, justo felis iaculis metus, at volutpat nisl nulla eget lacus. Morbi dignissim metus ac tortor venenatis, ut ultrices sapien semper. Vivamus orci erat,"
+    }
+  },
+  {
+    "model": "chat.messagemodel",
+    "pk": "ca64cfd9-e8ed-44bc-ac44-020d9b20d48d",
+    "fields": {
+      "chat": "a45c441d-4fde-4f79-aa67-ecfbb6be1991",
+      "user": "01601353-3562-4d0d-aa6d-f35ec1366af6",
+      "created_at": "2023-06-17T10:49:58.689Z",
+      "message": "Привет"
+    }
+  },
+  {
+    "model": "chat.messagemodel",
+    "pk": "cdc9bb2c-444f-46b3-8239-6dd25f3f9c9f",
+    "fields": {
+      "chat": "a45c441d-4fde-4f79-aa67-ecfbb6be1991",
+      "user": "0b9cc9c3-7f13-40f6-b575-ed5894aa85e5",
+      "created_at": "2023-06-17T10:50:23.413Z",
+      "message": "Привет, сейчас будем проверять работоспособность скролера и изменении даты"
+    }
+  },
+  {
+    "model": "chat.messagemodel",
+    "pk": "e00f00e4-9b4d-4970-81fd-8b43833dd016",
+    "fields": {
+      "chat": "a45c441d-4fde-4f79-aa67-ecfbb6be1991",
+      "user": "01601353-3562-4d0d-aa6d-f35ec1366af6",
+      "created_at": "2023-06-18T11:15:24.308Z",
+      "message": "Maecenas commodo orci vitae facilisis maximus. Mauris at magna id tellus vestibulum commodo quis vitae libero. Curabitur sed dui sit amet metus scelerisque ultrices eu quis quam. Nulla rutrum, lectus at convallis blandit, lacus felis scelerisque tellus, aliquam venenatis justo nisi a leo. Nunc vulputate tortor et risus commodo, eu sagittis enim elementum."
+    }
+  },
+  {
+    "model": "chat.messagemodel",
+    "pk": "eb0b5905-ee78-49f4-9862-4e01254c4088",
+    "fields": {
+      "chat": "a45c441d-4fde-4f79-aa67-ecfbb6be1991",
+      "user": "0b9cc9c3-7f13-40f6-b575-ed5894aa85e5",
+      "created_at": "2023-06-18T11:15:13.471Z",
+      "message": "Donec rhoncus sed ipsum non malesuada. Morbi commodo tempus libero. Morbi eu aliquam eros. Integer et convallis dolor. Fusce et dui mattis, tempus felis sed, tristique ex. Quisque mattis cursus erat, laoreet convallis purus. Integer a justo metus. Sed consectetur commodo diam, quis varius ante eleifend et. Cras interdum rhoncus congue."
+    }
+  }
+]
