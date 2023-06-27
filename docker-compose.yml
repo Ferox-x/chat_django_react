@@ -2,11 +2,9 @@ version: '3.9'
 
 volumes:
   pgdata:
-    driver: local
   redis_data:
-    driver: local
   static:
-    driver: local
+  assets:
 
 
 services:
@@ -17,8 +15,9 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     volumes:
-      - ./frontend:/srv/www/frontend
-    command: "npm start"
+      - ./frontend:/frontend
+      - assets:/frontend/assets
+    command: "npm run watch"
 
   backend:
     container_name: backend
@@ -27,14 +26,17 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     volumes:
-      - ./backend:/srv/www/backend
-    expose:
-      - 8000
+      - ./backend:/backend
+      -  assets:/frontend/assets
+      -  assets:/backend/static/frontend/assets
     ports:
       - "8000:8000"
     env_file:
-      - ./environment/.env
-    command: "python manage.py runserver 0.0.0.0:8000"
+      - ./environment/.docker.env
+    command: "sh docker-entrypoint-django.sh"
+    depends_on:
+      - frontend
+      - postgres
 
   pgadmin:
     container_name: pgadmin
@@ -55,7 +57,7 @@ services:
     image: postgres:15
     restart: always
     env_file:
-      - .env
+      - ./environment/.docker.env
     volumes:
       - pgdata:/var/lib/postgresql/data
 

@@ -9,7 +9,7 @@ ALLOWED_HOSTS = os.environ["DJANGO_ALLOWED_HOSTS"].split(",")
 
 ROOT_URLCONF = "config.urls"
 
-FRONTEND_DIR = BASE_DIR / "frontend"
+FRONTEND_DIR = BASE_DIR.parent / "frontend"
 STATIC_URL = "/static/"
 
 MEDIA_URL = "/media/"
