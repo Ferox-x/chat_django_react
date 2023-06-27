@@ -108,3 +108,7 @@ ___
 
     `docker-compose up -d  --build`
 
+2. Чтобы перейти на сайт в браузере:
+
+    `http://localhost:8000/login`
+
