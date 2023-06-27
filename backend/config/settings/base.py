@@ -16,7 +16,7 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
 STATICFILES_DIRS = [
-    BASE_DIR / "frontend" / "assets",
+    BASE_DIR.parent / "frontend" / "assets",
     BASE_DIR / "static",
 ]
 
@@ -43,8 +43,8 @@ INSTALLED_APPS = [
 WEBPACK_LOADER = {
     "DEFAULT": {
         "CACHE": not DEBUG,
-        "STATS_FILE": BASE_DIR / "frontend" / "assets" / "webpack-stats.json",
-        "BUNDLE_DIR_NAME": BASE_DIR / "frontend" / "assets" / "bundles",
+        "STATS_FILE": BASE_DIR.parent / "frontend" / "assets" / "webpack-stats.json",
+        "BUNDLE_DIR_NAME": BASE_DIR.parent / "frontend" / "assets" / "bundles",
         "POLL_INTERVAL": 0.1,
         "IGNORE": [r".+\.hot-update.js", r".+\.map"],
     }
