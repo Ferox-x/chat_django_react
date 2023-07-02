@@ -4,7 +4,7 @@ ARG DJANGO_ENV
 ENV DJANGO_ENV=${DJANGO_ENV}
 
 WORKDIR /tmp
-COPY ./poetry.lock ./pyproject.toml /tmp/
+COPY ./pyproject.toml /tmp/
 RUN pip install poetry==1.4.2 \
     && poetry --version \
     && echo "$DJANGO_ENV" \
